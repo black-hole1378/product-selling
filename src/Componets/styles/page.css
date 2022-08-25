@@ -1,0 +1,14 @@
+.container {
+    display: block;
+    width: 80vw;
+    height: max-content;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        width: 100vw;
+        margin: auto;
+    }
+}

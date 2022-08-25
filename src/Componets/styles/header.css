@@ -1,0 +1,150 @@
+
+.header-container {
+   width: 100%;
+   height: 80px;
+   max-height: max-content;
+   border-bottom: 1px var(--border-color) solid;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center; 
+}
+
+.cart-button {
+   font-size: 2rem;
+   padding: 20px;
+   background-color: transparent;
+   color: var(--gray-color); 
+   border: none;
+}
+
+.cart-button:hover {
+    color: green;
+    cursor: pointer;
+ }
+ 
+
+.profile img{
+   width: 30px;
+   text-align: center;
+   height: 30px;
+   border-image: round;
+} 
+
+.link {
+   font-size: 3rem;
+   background-color: transparent;
+   border: none;
+   text-decoration: none;
+   display: none;
+}
+
+.link-button {
+   color: var(--gray-color);
+}
+
+.link:hover {
+   cursor: pointer;
+}
+
+.left-header, .right-container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.basket-container {
+   display: flex;  
+   margin-right: 20px;
+   flex-direction: row-reverse;
+}
+
+.basket-container #notification {
+   position: absolute;
+   top: 10px;
+   color: white;
+   background-color: orange;
+   border-radius: 50px; 
+   margin-right: 13px;
+   padding: 2px 4px;
+}
+
+
+.logo {
+    font-size: 2.5rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(0, 0%, 0%);
+}
+
+.logo:hover {
+   color: hsl(0, 0%, 0%);
+}
+.navbar {
+    margin-left: 3rem;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.navbar ul{
+   display: flex;
+   flex-direction: row; 
+   align-items: center;
+   justify-content: space-between;
+   list-style: none;
+}
+
+
+.navbar-link {
+   outline: none;
+   text-decoration: none;
+   color: var(--gray-color); 
+   font-size: 0.8rem;
+   font-weight: bold;
+   padding: 10px;
+}
+
+.navbar-link:hover {
+   border-radius: 5px;
+   background-color: hsl(30, 98%, 51%);
+   color: #fff; 
+}
+
+@media screen and (max-width: 400px) {
+   
+   .header-container {
+      width: 90%;
+      margin: 0 auto; 
+   }
+
+   .basket-container #notification {
+      top: 22px;
+   }
+
+   .navbar {
+     display: none;
+   }
+
+   html {
+     font-size: 0.5rem;
+   }
+
+   .profile img {
+     width: 15px;
+     height: 15px;
+   }
+
+}
+
+@media screen and (max-width: 700px) {
+   
+   .navbar{
+     display: none;
+   }
+
+   .link {
+     display: block;
+     padding: 4px;
+   }
+}
